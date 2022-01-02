@@ -58,10 +58,10 @@ for token in tokens:
             logging.info("Minimum market cap reached. Stopped scraping tokens.")
             break
     except Exception as e:
-        print '-'*60
-        print "Could not scrape token {0}.".format(token['slug'])
-        print traceback.format_exc()
-        print '-'*60
+        print('-'*60)
+        print("Could not scrape token {0}.".format(token['slug']))
+        print(traceback.format_exc())
+        print('-'*60)
         logging.info(">> Could not scrape {0}. Skipping.".format(token['slug']))
         continue
 logging.info("Attempting to scrape coin list...")
@@ -74,10 +74,10 @@ for coin in coins:
             logging.info("Minimum market cap reached. Stopped scraping coins.")
             break
     except Exception as e:
-        print '-'*60
-        print "Could not scrape coin {0}.".format(coin['slug'])
-        print traceback.format_exc()
-        print '-'*60
+        print('-'*60)
+        print("Could not scrape token {0}.".format(token['slug']))
+        print(traceback.format_exc())
+        print('-'*60)
         logging.info(">> Could not scrape {0}. Skipping.".format(coin['slug']))
         continue
 logging.info("Finished scraping tokens and coins. All done.")
