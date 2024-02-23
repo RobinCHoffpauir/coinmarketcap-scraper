@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"analyticsdx-vscode-core.CLI.checkForPlugin": false
+	}
+}
